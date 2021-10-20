@@ -7,7 +7,9 @@
         <v-col v-for="cafe in cafes" :key="cafe.id" md="4" xl="4">
           <v-card class="cafe__card">
             <v-img height="250" :src="cafe.img"></v-img>
-            <v-card-title>{{ cafe.name }}</v-card-title>
+            <v-card-title>
+              <router-link to="/cafe/view">{{ cafe.name }}</router-link>
+            </v-card-title>
             <v-card-text>
               <p>{{ cafe.description }}</p>
               <b>Rating: {{ cafe.rating }} of 5</b>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="red" app>
+    <v-app-bar color="green" app>
       <v-col class="font-weight-bold white--text d-flex">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-app-bar-title class="d-flex align-center">iFood</v-app-bar-title>
@@ -11,7 +11,9 @@
         <v-list-item-group v-model="group" active-class="text--acent-4">
 
           <v-list-item>
-            <v-list-item-title>Lists og cafes</v-list-item-title>
+            <v-list-item-title>
+              <router-link to="/">Lists og cafes</router-link>
+            </v-list-item-title>
           </v-list-item>
 
           <v-list-item>

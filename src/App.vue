@@ -4,7 +4,7 @@
 
     <v-main>
       <v-container>
-        <Cafe></Cafe>
+        <router-view class="view"></router-view>
       </v-container>
     </v-main>
 
@@ -15,14 +15,12 @@
 <script>
 
 import Header from "./components/Header";
-import Cafe from "./components/Cafe.vue";
 import Footer from "./components/Footer";
 
 export default {
   name: 'App',
   components: {
     Header,
-    Cafe,
     Footer
   },
   data: () => ({
